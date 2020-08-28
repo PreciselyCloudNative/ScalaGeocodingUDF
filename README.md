@@ -30,7 +30,7 @@ Spectrum Geocoding for Big Data is an external library, that will enable your sa
 
 * **spectrum-bigdata-geocoding-sdk-spark2-<version>.jar**
 To run this sample locally, you should have this library under "lib" directory of this sample.
-To run this sample on EMR, this library can be in Amazon S3 or on Master Node
+To run this sample on cluster, this library must be on Master Node
 
 ### Geocoding Reference Data
 This sample uses geocoding reference data provided by Precisely [Data Experience](https://data.precisely.com). Geocoding attributes will be generated using this data
@@ -68,12 +68,12 @@ To execute the sample on a cluster, you must have a download directory in every 
 ```
 spark-submit --class com.precisely.bigdata.spectrum.global.spark.MultipassGeocoding --master yarn \
 --deploy-mode cluster --executor-memory 20G --executor-cores 6 \
---conf spark.yarn.maxAppAttempts=1 --conf spark.hadoop.fs.s3a.access.key=<S3 ACCESS KEY>** \
---conf spark.hadoop.fs.s3a.secret.key=<S3 SECRET KEY>** \
+--conf spark.yarn.maxAppAttempts=1 --conf spark.hadoop.fs.s3a.access.key=**<S3 ACCESS KEY>** \
+--conf spark.hadoop.fs.s3a.secret.key=**<S3 SECRET KEY>** \
 --jars /pb/geocoding/software/spark2/custom/geocoding-4.0.0.7-all.jar \
 /pb/geocoding/software/spark2/sdk/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar \
---input s3a://sales-tim-mckenzie/Customer/Mastercard/trilliumSample/input/trillium_sample_10k/part-00000-216b6fde-f3a7-47a4-b4ef-63ef4fbd62b1-c000.csv \
---output s3a://sales-tim-mckenzie/Customer/Mastercard/trilliumSample/input/trillium_sample_10k/output \
+--input s3a://INPUT/ADDRESS/FILE/LOCATION \
+--output s3a://OUTPUT/FILE/LOCATION \
 --format psv --num-partitions=36 --download-location /pb/downloads \
 --geocoding-resources-location hdfs:///pb/geocoding/software/resources/ \
 --geocoding-preferences-filepath hdfs:///pb/geocoding/software/resources/config/geocodePreferences.xml \
