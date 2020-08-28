@@ -35,18 +35,18 @@ To run this sample on cluster, this library must be on Master Node
 ### Geocoding Reference Data
 This sample uses geocoding reference data provided by Precisely [Data Experience](https://data.precisely.com). Geocoding attributes will be generated using this data
 
-* **CAN-EGM-MASTERLOCATION-CA8-105-yyyyMM-GEOCODING.spd**
-* **EGM-WORLD-AP-WLD-105-yyyyMM-GEOCODING.spd**
-* **EGM-WORLD-STREET-WBL-105-yyyyMM-GEOCODING.spd**
-* **GBR-EGM-ORDNANCESURVEY-GB7-105-yyyyMM-GEOCODING.spd**
-* **IDN-EGM-NAVTEQ-ID2-105-yyyyMM-GEOCODING.spd**
-* **KLD062020.spd**
-* **KNT062020.spd**
-* **PHL-EGM-TOMTOM-PH1-105-yyyyMM-GEOCODING.spd**
-* **POL-EGM-NAVTEQ-PL2-105-yyyyMM-GEOCODING.spd**
-* **TUR-EGM-NAVTEQ-AP-TR4-105-yyyyMM-GEOCODING.spd**
-* **TUR-EGM-NAVTEQ-STREET-TR2-105-yyyyMM-GEOCODING.spd**
-* **VNM-EGM-NAVTEQ-VN2-105-yyyyMM-GEOCODING.spd**
+* **CAN-EGM-MASTERLOCATION-CA8-105-yyyymm-GEOCODING.spd**
+* **EGM-WORLD-AP-WLD-105-yyyymm-GEOCODING.spd**
+* **EGM-WORLD-STREET-WBL-105-yyyymm-GEOCODING.spd**
+* **GBR-EGM-ORDNANCESURVEY-GB7-105-yyyymm-GEOCODING.spd**
+* **IDN-EGM-NAVTEQ-ID2-105-yyyymm-GEOCODING.spd**
+* **KLDmmyyyy.spd**
+* **KNTmmyyyy.spd**
+* **PHL-EGM-TOMTOM-PH1-105-yyyymm-GEOCODING.spd**
+* **POL-EGM-NAVTEQ-PL2-105-yyyymm-GEOCODING.spd**
+* **TUR-EGM-NAVTEQ-AP-TR4-105-yyyymm-GEOCODING.spd**
+* **TUR-EGM-NAVTEQ-STREET-TR2-105-yyyymm-GEOCODING.spd**
+* **VNM-EGM-NAVTEQ-VN2-105-yyyymm-GEOCODING.spd**
 
 If you haven't installed the reference data in your cloud environment, follow the steps to [install data](https://support.pb.com/help/hadoop/landingpage/docs/geocoding/spectrum-big-data-geocoding-v4-0-0-hortonworks-install-guide.pdf)
 
