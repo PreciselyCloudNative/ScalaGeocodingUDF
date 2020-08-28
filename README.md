@@ -59,22 +59,26 @@ The sample includes a gradle build system around it.  To build the sample code, 
 To run this sample on a cluster, you should copy this build(/build/libs/geocoding-4.0.0.7-all.jar) to the Master Node
 
 ## Running the sample on a cluster
-* Number of data nodes: 5
+* Number of data nodes: 4
 * Instance Type: m5a.2xlarge
 
 To execute the sample on a cluster, you must have a download directory in every node of your cluster(/pb/downloads) with all read and write permissions. This directory is used to locally cache the reference data for use during the search.
 
 ### Spark Submit in Command Prompt:
 ```
-spark-submit --class com.precisely.bigdata.spectrum.global.spark.MultipassGeocoding --master yarn --deploy-mode cluster \
---executor-memory 20G --executor-cores 6 \
---conf spark.yarn.maxAppAttempts=1 --conf spark.hadoop.fs.s3a.access.key=AKIAJG22UXN5NXDVOWUA --conf spark.hadoop.fs.s3a.secret.key=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 \
---jars /pb/geocoding/software/spark2/custom/geocoding-4.0.0.7-all.jar /pb/geocoding/software/spark2/sdk/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar \
+spark-submit --class com.precisely.bigdata.spectrum.global.spark.MultipassGeocoding --master yarn \
+--deploy-mode cluster --executor-memory 20G --executor-cores 6 \
+--conf spark.yarn.maxAppAttempts=1 --conf spark.hadoop.fs.s3a.access.key=<S3 ACCESS KEY>** \
+--conf spark.hadoop.fs.s3a.secret.key=<S3 SECRET KEY>** \
+--jars /pb/geocoding/software/spark2/custom/geocoding-4.0.0.7-all.jar \
+/pb/geocoding/software/spark2/sdk/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar \
 --input s3a://sales-tim-mckenzie/Customer/Mastercard/trilliumSample/input/trillium_sample_10k/part-00000-216b6fde-f3a7-47a4-b4ef-63ef4fbd62b1-c000.csv \
---format psv --num-partitions=36 --output s3a://sales-tim-mckenzie/Customer/Mastercard/trilliumSample/input/trillium_sample_10k/output \
---geocoding-resources-location hdfs:///pb/geocoding/software/resources/ --geocoding-preferences-filepath hdfs:///pb/geocoding/software/resources/config/geocodePreferences.xml \
+--output s3a://sales-tim-mckenzie/Customer/Mastercard/trilliumSample/input/trillium_sample_10k/output \
+--format psv --num-partitions=36 --download-location /pb/downloads \
+--geocoding-resources-location hdfs:///pb/geocoding/software/resources/ \
+--geocoding-preferences-filepath hdfs:///pb/geocoding/software/resources/config/geocodePreferences.xml \
 --geocoding-output-fields X Y formattedStreetAddress formattedLocationAddress precisionCode PB_KEY areaName3 areaName1 postCode1 \
---geocoding-input-fields mainAddressLine=1 areaName3=3 areaName1=4 postCode1=5 country=6 --download-location /pb/downloads
+--geocoding-input-fields mainAddressLine=1 areaName3=3 areaName1=4 postCode1=5 country=6 
 ```
 
 #### Format supported:
