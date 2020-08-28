@@ -8,11 +8,19 @@ This sample for the Spark Geocoding API in Scala demonstrates how to improve geo
 The sample loads a file with parse address into a Spark DataFrame and geocode the address with geocoding attributes using 'Spectrum Geocoding for Big Data' SDK and Reference Data
 
 ### Forward multipass geocoding
-Pass qualifier is result with a PreciselyID and suboptimal precision levels, i.e., any result code between S5-S8 (street interpolated to roof toop).
-First pass is running using Multi Line address, a second pass is running using single line address matching, third and fourth passes are running using relaxed matchmode and fallback to nearest PreciselyID respectively. Max Fallback Search distance is 5280 feet
+1. During the first pass includes individual address fields will be submitted to the geocoder with Standard User specified match mode. Fallback to
+Postal & Geography will be on. The reason for turning on fallback for the first pass is because multi-line will give back less false positives for both
+streets and postal\geographic matches.
+2. If Match Score < 80 OR Match Type != Address from first pass, then only the second pass below will be triggered otherwise candidate from first
+pass will be picked up.
+3. The second pass will submit single line address (with concatenated address fields) to the geocoder. Fallback to Postal & Geography will be
+on. The match mode in second pass will be match mode preference setup by the user while submitting the job.
+4. If Match Score > 80 and Match type Address from second pass, we pick the output candidate from second pass.
+5. But if Match Score < 80 OR match type Address from second pass, we pick the output from first pass or second pass depending on:
+6. Which candidate has better Match score.
+7. If Match Scores are equal then candidate will be picked depending on which pass has better Match Type
+8. If Match Type is also equal then candidate will be picked depending on which pass has better location type or location score.
 
-### Reverse multipass geocoding
-Pass qualifier is result with a PreciselyID. First pass is running using location with default search distance, a second pass is running using location with custom search distance. Max Search distance is 5280 feet
 
 ## Instructions
 Follow the instructions to use Geocoding SDK and Reference Data
@@ -27,8 +35,18 @@ To run this sample on EMR, this library can be in Amazon S3 or on Master Node
 ### Geocoding Reference Data
 This sample uses geocoding reference data provided by Precisely [Data Experience](https://data.precisely.com). Geocoding attributes will be generated using this data
 
-* **US Master Location Data(KLDmmyyyy.spd)**
-* **US NAVTEQ Streets (KNTmmyyyy.spd)**
+* **CAN-EGM-MASTERLOCATION-CA8-105-yyyyMM-GEOCODING.spd**
+* **EGM-WORLD-AP-WLD-105-yyyyMM-GEOCODING.spd**
+* **EGM-WORLD-STREET-WBL-105-yyyyMM-GEOCODING.spd**
+* **GBR-EGM-ORDNANCESURVEY-GB7-105-yyyyMM-GEOCODING.spd**
+* **IDN-EGM-NAVTEQ-ID2-105-yyyyMM-GEOCODING.spd**
+* **KLD062020.spd**
+* **KNT062020.spd**
+* **PHL-EGM-TOMTOM-PH1-105-yyyyMM-GEOCODING.spd**
+* **POL-EGM-NAVTEQ-PL2-105-yyyyMM-GEOCODING.spd**
+* **TUR-EGM-NAVTEQ-AP-TR4-105-yyyyMM-GEOCODING.spd**
+* **TUR-EGM-NAVTEQ-STREET-TR2-105-yyyyMM-GEOCODING.spd**
+* **VNM-EGM-NAVTEQ-VN2-105-yyyyMM-GEOCODING.spd**
 
 If you haven't installed the reference data in your cloud environment, follow the steps to [install data](https://support.pb.com/help/hadoop/landingpage/docs/geocoding/spectrum-big-data-geocoding-v4-0-0-hortonworks-install-guide.pdf)
 
@@ -38,37 +56,26 @@ The sample includes a gradle build system around it.  To build the sample code, 
 
     gradlew clean build
 
-To run this sample on EMR, you should copy this build(/build/libs/geocoding-4.0.0.7-all.jar) to Amazon S3 or to Master Node
+To run this sample on a cluster, you should copy this build(/build/libs/geocoding-4.0.0.7-all.jar) to the Master Node
 
 ## Running the sample on a cluster
 * Number of data nodes: 5
 * Instance Type: m5a.2xlarge
 
-To execute the sample on a cluster, you must have a download directory in every node of your cluster(/mnt/pb/downloads) with all read and write permissions. This directory is used to locally cache the reference data for use during the search.
-You can set this in your bootstrapping scripts
+To execute the sample on a cluster, you must have a download directory in every node of your cluster(/pb/downloads) with all read and write permissions. This directory is used to locally cache the reference data for use during the search.
 
 ### Spark Submit in Command Prompt:
 ```
 spark-submit --class com.precisely.bigdata.spectrum.global.spark.MultipassGeocoding --master yarn --deploy-mode cluster \
---executor-memory 10G --executor-cores 4 \
---conf spark.yarn.maxAppAttempts=1 \
---jars s3://LOCATION/OF/GEOCODING/SDK/spectrum-bigdata-geocoding-sdk-spark2-<version>.jar s3://LOCATION/OF/YOUR/SAMPLE/BUILD/geocoding-4.0.0.7-all.jar \
---input s3://LOCATION/OF/YOUR/INPUT/FILE/address_file.csv --format csv \
---num-partitions=36 \
---geocoding-resources-location /mnt/pb/geocoding/software/resources/ \
---geocoding-preferences-filepath /mnt/pb/geocoding/software/resources/config/geocodePreferences.xml \
---output s3://LOCATION/OF/OUTPUT/DIRECTORY/output_address_file
+--executor-memory 20G --executor-cores 6 \
+--conf spark.yarn.maxAppAttempts=1 --conf spark.hadoop.fs.s3a.access.key=AKIAJG22UXN5NXDVOWUA --conf spark.hadoop.fs.s3a.secret.key=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 \
+--jars /pb/geocoding/software/spark2/custom/geocoding-4.0.0.7-all.jar /pb/geocoding/software/spark2/sdk/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar \
+--input s3a://sales-tim-mckenzie/Customer/Mastercard/trilliumSample/input/trillium_sample_10k/part-00000-216b6fde-f3a7-47a4-b4ef-63ef4fbd62b1-c000.csv \
+--format psv --num-partitions=36 --output s3a://sales-tim-mckenzie/Customer/Mastercard/trilliumSample/input/trillium_sample_10k/output \
+--geocoding-resources-location hdfs:///pb/geocoding/software/resources/ --geocoding-preferences-filepath hdfs:///pb/geocoding/software/resources/config/geocodePreferences.xml \
+--geocoding-output-fields X Y formattedStreetAddress formattedLocationAddress precisionCode PB_KEY areaName3 areaName1 postCode1 \
+--geocoding-input-fields mainAddressLine=1 areaName3=3 areaName1=4 postCode1=5 country=6 --download-location /pb/downloads
 ```
-
-### Spark Submit As an EMR Step: 
-1.	‘JAR location’: command-runner.jar
-2.	‘Arguments’: spark-submit --class com.precisely.bigdata.spectrum.global.spark.MultipassGeocoding --master yarn --deploy-mode cluster --executor-memory 10G --executor-cores 4 --conf spark.yarn.maxAppAttempts=1 --jars s3://LOCATION/OF/GEOCODING/SDK/spectrum-bigdata-geocoding-sdk-spark2-<version>.jar s3://LOCATION/OF/YOUR/SAMPLE/BUILD/geocoding-4.0.0.7-all.jar --input s3://LOCATION/OF/YOUR/INPUT/FILE/address_file.csv --format csv --num-partitions=36 --geocoding-resources-location /mnt/pb/geocoding/software/resources/ --geocoding-preferences-filepath /mnt/pb/geocoding/software/resources/config/geocodePreferences.xml --output s3://LOCATION/OF/OUTPUT/DIRECTORY/output_address_file 
-
-### Optional Parameters:
-1. --download-location		: Location of the directory where reference data will be downloaded to. This path must exist on every data node. Default is /mnt/pb/downloads 
-2. --geocoding-output-fields: The requested geocode fields to be included in the output. Default fields are "X", "Y", "formattedStreetAddress", "formattedLocationAddress", "PrecisionCode", "PB_KEY", "areaName3", "areaName1", "postCode1","PASS_TYPE" 
-3. --fallback 				: Fallback search distance(in feet) to nearest PreciselyID and this will enable Multipass geocoding class. This works only with forward geocoding
-4. --search-distance		: Increase the search distance(in feet) to find an address match and this will enable Multipass reverse geocoding class. This works only with reverse geocoding
 
 #### Format supported:
 1. csv
