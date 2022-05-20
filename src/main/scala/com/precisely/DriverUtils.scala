@@ -1,4 +1,10 @@
-package com.precisely.bigdata.spectrum.global.spark.file
+///*
+// * Copyright 2017, 2020 Precisely. All rights reserved.
+// * This document contains unpublished, confidential, and proprietary information of Precisely.
+// * No disclosure or use of any portion of the contents of this document may be made without the express written consent of Precisely.
+// */
+//
+package com.precisely
 
 import org.apache.spark.sql.functions.{col, lit, trim, when}
 import org.apache.spark.sql.{Column, DataFrame, functions}
@@ -27,13 +33,13 @@ object DriverUtils {
 	/**
 	  * Creates a column definition that uses logic to fallback from null value in a specified column to a literal default value.
 	  */
-	def buildFallbackToLiteral(inputField: String, inputLiteral: ScallopOption[String], df: DataFrame, commandLine: BaseCommandLine): Column = {
+	def buildFallbackToLiteral(inputField: String, inputLiteral: String, df: DataFrame, inputFields: Map[String, String]): Column = {
 		functions.coalesce(
-			commandLine.geocodingInputFields.get(inputField)
-					.map(_ => col(df.columns(getRequiredColumnIndex(inputField, commandLine.geocodingInputFields.get(inputField), df))))
+			inputFields.get(inputField)
+					.map(_ => col(df.columns(getRequiredColumnIndex(inputField, inputFields.get(inputField), df))))
 					.map(rawColumn => when(trim(rawColumn).eqNullSafe(""), lit(null)).otherwise(rawColumn))
 					.getOrElse(lit(null)),
-			lit(inputLiteral.getOrElse(null))
+			lit(inputLiteral)
 		)
 	}
 }

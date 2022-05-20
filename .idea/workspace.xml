@@ -1,32 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6e618cf5-5935-4f15-8058-3edd41876ca5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/KeyLookup.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/precisely/Addressing.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/precisely/DriverUtils.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileContent/annotation-processors.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassGeocodeExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassGeocodeExecutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassReverseGeocodeExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassReverseGeocodeExecutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassGeocodeExecutor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassGeocodeExecutor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/KeyLookup$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/KeyLookup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$$anonfun$5$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$$anonfun$5$$anonfun$apply$2$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$$anonfun$5$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$$anonfun$5$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$$typecreator2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$GeocodingJobResults$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding$GeocodingJobResults.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassReverseGeocoding$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/MultipassReverseGeocoding.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/BaseCommandLine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/CommaAllowedConverter$$anonfun$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/CommaAllowedConverter$$anonfun$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/CommaAllowedConverter$$anonfun$20$$anonfun$21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/CommaAllowedConverter$$anonfun$20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/CommaAllowedConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils$$anonfun$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils$$anonfun$1$$anonfun$apply$2$$anonfun$applyOrElse$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils$$anonfun$1$$anonfun$apply$2$$anonfun$applyOrElse$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils$$anonfun$1$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils$$anonfun$buildFallbackToLiteral$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils$$anonfun$buildFallbackToLiteral$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils$$anonfun$buildFallbackToLiteral$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils$$anonfun$buildFallbackToLiteral$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/FileInput$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/FileInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/file/GeocodingCommandLine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassGeocodeExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassReverseGeocodeExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/GeocodingAccumulator$$anonfun$merge$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/GeocodingAccumulator$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/GeocodingAccumulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/LocationType$$anonfun$withNameWithDefault$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/LocationType$$anonfun$withNameWithDefault$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/LocationType$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/LocationType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/MatchType$$anonfun$isAddressSeries$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/MatchType$$anonfun$isAdminSeries$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/MatchType$$anonfun$isStreetSeries$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/MatchType$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/MatchType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/MultipassGeocodeExecutor$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/precisely/bigdata/spectrum/global/spark/mapMarker/MultipassGeocodeExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/KeyLookup.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/MultipassReverseGeocoding.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/CommandLine.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/FileInput.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassGeocodeExecutor.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassReverseGeocodeExecutor.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/GeocodingAccumulator.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/LocationType.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/MatchType.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/MultipassGeocodeExecutor.scala" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/geocoding$Addressing.ic" NAME="Addressing Coverage Results" MODIFIED="1634078220163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -41,7 +134,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="geocoding" type="f1a62948:ProjectNode" />
+                <item name="scalaGeocodingUDF" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -50,26 +143,45 @@
       </state>
     </system>
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1606">
-              <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
-              <folding>
-                <element signature="e#53#112#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>registe</find>
-      <find>DriverUtils</find>
+      <find>city</find>
+      <find>std_pref_addressmatchkey</find>
+      <find>TempCity</find>
+      <find>std_addressmatchkey_PRE</find>
+      <find>std_pref_locationmatchkey_PRE</find>
+      <find>std_pref_addressmatchkey_PRE</find>
+      <find>std_city</find>
+      <find>NAME</find>
+      <find>std_rdi</find>
+      <find>resbus</find>
+      <find>datatype</find>
+      <find>dpv</find>
+      <find>location</find>
+      <find>addressmatchkey_PRE</find>
+      <find>std_pref_addr_line_1</find>
+      <find>std_pref_house_num</find>
+      <find>std_pref_predirectional</find>
+      <find>std_pref_street_name</find>
+      <find>std_pref_street_type</find>
+      <find>std_addressline1</find>
+      <find>std_housenumber</find>
+      <find>std_pref_vz_apartmentlabel</find>
+      <find>std_pref_apartmentlabel</find>
+      <find>std_pref_apartmentnumber</find>
+      <find>address.unit</find>
+      <find>pbkey</find>
+      <find>rdi</find>
+      <find>std_rdi_retcode</find>
+      <find>std_dpv</find>
+      <find>customFields['DPV_CONFIRM']</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -80,7 +192,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/spatial/spark/file/FileInput.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/FileInput.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/CommandLine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/MultipassReverseGeocoding.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassReverseGeocodeExecutor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/KeyLookup.scala" />
@@ -90,147 +201,126 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/MatchType.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/GeocodingAccumulator.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/MultipassGeocodeDriver.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/AddressingCommandLine.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/CommandLine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/addressing/DriverUtils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/hashMap.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/CustomExecutor.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/addressing/CommandLine.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/AddressingDriver.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/udfObj.scala" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/precisely/udfObj.scala" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="1938" />
-    <option name="height" value="1050" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="2425" />
+    <option name="height" value="1315" />
+  </component>
+  <component name="ProjectId" id="22M5LYHNgsPnINi4iiucAW205l1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="geocoding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geocoding" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sparkUDF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparkUDF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="geocoding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geocoding" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sparkUDF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparkUDF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparkUDF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparkUDF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="geocoding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geocoding" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sparkUDF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparkUDF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="geocoding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geocoding" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geocoding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geocoding" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sparkUDF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparkUDF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="geocoding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geocoding" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sparkUDF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparkUDF" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geocoding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geocoding" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="geocodingUserDefineFunction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geocoding" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geocoding" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="mapMarker" type="462c0819:PsiDirectoryNode" />
+              <item name="precisely" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1598467937741" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1639702147639" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.precisely.bigdata.spectrum.global.spark" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\OneDrive - Precisely Inc\2021\verizon\geocoding\src\main\scala\com\precisely\bigdata\spectrum\global\spark\addressing" />
+      <recent name="C:\Users\Administrator\OneDrive - Precisely Inc\2021\verizon\geocoding\src\main\scala\com\precisely\bigdata\spectrum\global\spark\file" />
+      <recent name="C:\Users\Administrator\OneDrive - Precisely Inc\2021\verizon\geocoding\src\main\scala\com\precisely\bigdata\spectrum\global\spark" />
       <recent name="C:\Users\Administrator\Desktop\Downloads\POC\tmo\geocoding" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.precisely" />
+      <recent name="com.precisely.bigdata.spectrum.global.spark" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.geocode">
-    <configuration name="geocode" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.precisely.bigdata.spectrum.global.spark.MultipassGeocoding" />
-      <module name="com.precisely.bigdata.spectrum.global.spark.geocoding.main" />
-      <option name="PROGRAM_PARAMETERS" value="--input &quot;C:\Users\Administrator\Desktop\Downloads\POC\Mastercard\geocoding\data\PB_INTL_test_File.csv&quot; --output &quot;C:\Users\Administrator\Desktop\Downloads\POC\Mastercard\geocoding\data\output&quot; --format psv --geocoding-resources-location &quot;$PROJECT_DIR$/../../geocoding_delete/ggs-dist-3.1.1/resources&quot; --geocoding-preferences-filepath &quot;C:\Users\Administrator\Desktop\Downloads\POC\geocoding_delete\ggs-dist-3.1.1\resources\config\geocodePreferences.xml&quot; --geocoding-output-fields X Y formattedStreetAddress formattedLocationAddress precisionCode PB_KEY areaName3 areaName1 postCode1 INC_IND URBANICITY --geocoding-country usa --geocoding-input-fields mainAddressLine=7" />
+  <component name="RunManager">
+    <configuration name="Addressing" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.precisely.Addressing" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="keylookup" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.precisely.bigdata.spectrum.global.spark.KeyLookup" />
-      <module name="com.precisely.bigdata.spectrum.global.spark.geocoding.main" />
-      <option name="PROGRAM_PARAMETERS" value="--input &quot;C:\Users\Administrator\Desktop\Downloads\POC\tmo\geocoding\data\hud_delete1.csv&quot; --output &quot;C:\Users\Administrator\Desktop\Downloads\POC\tmo\geocoding\data\output&quot; --format csv --geocoding-resources-location &quot;$PROJECT_DIR$/../../geocoding_delete/ggs-dist-3.1.1/resources&quot; --geocoding-preferences-filepath &quot;C:\Users\Administrator\Desktop\Downloads\POC\geocoding_delete\ggs-dist-3.1.1\resources\config\geocodePreferences.xml&quot;" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="reverseGeocode" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.precisely.bigdata.spectrum.global.spark.MultipassReverseGeocoding" />
-      <module name="com.precisely.bigdata.spectrum.global.spark.geocoding.main" />
-      <option name="PROGRAM_PARAMETERS" value="--input &quot;C:\Users\Administrator\Desktop\Downloads\POC\tmo\geocoding\data\revInput.csv&quot; --output &quot;C:\Users\Administrator\Desktop\Downloads\POC\tmo\geocoding\data\output&quot; --format csv --geocoding-resources-location &quot;$PROJECT_DIR$/../../geocoding_delete/ggs-dist-3.1.1/resources&quot; --search-distance 500 --geocoding-preferences-filepath &quot;C:\Users\Administrator\Desktop\Downloads\POC\geocoding_delete\ggs-dist-3.1.1\resources\config\geocodePreferences.xml&quot;" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.geocode" />
-      <item itemvalue="Application.keylookup" />
-      <item itemvalue="Application.reverseGeocode" />
-    </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -246,9 +336,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22867803" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2761194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -257,7 +346,38 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37919825" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.39434725" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35427952" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.42903575" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.52112675" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3270525" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32995737" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.1337953" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33586133" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -266,325 +386,284 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32995737" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.1337953" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout>
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>addressInputDF.columns.apply(1)</expression-string>
+        <expression-string>input.requestAddress().getCity</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>addressInputDF.columns.apply(0).getClass</expression-string>
+        <expression-string>input.requestAddress().getAddressLines.get(0)</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>addressInputDF.columns.apply(0).getClasst</expression-string>
+        <expression-string>input.requestAddress()</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>addressInputDF.columns.apply(0)</expression-string>
+        <expression-string>input.values.get(&quot;city&quot;)</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>addressInputDF.columns</expression-string>
+        <expression-string>input.values</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fallbackResult</expression-string>
+        <expression-string>df.show(1)</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fallbackResult.getCandidates</expression-string>
+        <expression-string>dpv == null</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fallbackResult.getCandidates.get(0)</expression-string>
+        <expression-string>dpv != null</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fallbackResult.getCandidates.get(0).getCustomFieldValue(&quot;PB_KEY&quot;)</expression-string>
+        <expression-string>dpv === null</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>singleLineCandidates.get(0).getCustomFieldValue(&quot;PB_KEY&quot;)</expression-string>
+        <expression-string>dpv === &quot;null&quot;</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/UploadDynamoTableDriver.scala" />
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/internal/support/StandardGeocodeExecutor.class">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassReverseGeocodeExecutor.scala" />
+    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/spark/api/GeocodeUDFBuilder.class" />
+    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/spark/api/ReverseGeocodeUDFBuilder.class" />
+    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/mapinfo/geocode/api/Preferences.class" />
+    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/api/GeocodeByKeyExecutor.class" />
+    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/api/ReverseGeocodeExecutor.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/MultipassReverseGeocoding.scala" />
+    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/spark/api/GeocodeByKeyUDFBuilder.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/MultipassGeocodeDriver.scala" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/KeyLookup.scala" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.12/66a32abd59b3f9bb690bba2efc7d7ef680157bcd/scala-library-2.11.12-sources.jar!/scala/Enumeration.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/GeocodingAccumulator.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassGeocodeExecutor.scala" />
+    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-addressing-sdk-spark2_2.12-5.0.0.4.jar!/com/precisely/bigdata/addressing/spark/api/AddressingBuilder.class" />
+    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-addressing-sdk-spark2_2.12-5.0.0.4.jar!/com/precisely/bigdata/addressing/spark/api/UDFBuilder.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/FileInput.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/CommandLine.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/addressing/DriverUtils.scala" />
+    <entry file="jar://$USER_HOME$/Desktop/Downloads/finalist/sbg500F01/spectrum-bigdata-addressing-5.0.0.4/spark2/sdk/lib/spectrum-bigdata-addressing-sdk-spark2_2.12-5.0.0.4.jar!/com/precisely/bigdata/addressing/spark/api/UDFBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="176">
+          <caret line="8" column="81" lean-forward="true" selection-start-line="8" selection-start-column="81" selection-end-line="8" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/Downloads/finalist/sbg500F01/spectrum-bigdata-addressing-5.0.0.4/spark2/sdk/lib/spectrum-bigdata-addressing-sdk-spark2_2.12-5.0.0.4.jar!/com/precisely/bigdata/addressing/spark/api/RequestInput.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/LocationType.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/MatchType.scala" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.10/686bb459f3026f14165373324d943a4cac6959c2/scala-library-2.12.10-sources.jar!/scala/Enumeration.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="217" column="8" selection-start-line="217" selection-start-column="8" selection-end-line="217" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/MultipassGeocodeExecutor.scala" />
+    <entry file="jar://$USER_HOME$/Desktop/Downloads/finalist/sbg500F01/spectrum-bigdata-geocoding-5.0.0.4/spark2/sdk/lib/spectrum-bigdata-geocoding-sdk-spark2-5.0.0.4.jar!/com/precisely/addressing/v1/model/Result.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="30" />
           <folding>
-            <element signature="e#0#793#0" expanded="true" />
+            <element signature="e#1493#1494#0" expanded="true" />
+            <element signature="e#1533#1534#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/mapinfo/geocode/api/KeyType.class">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/hashMap.scala" />
+    <entry file="jar://$USER_HOME$/Desktop/Downloads/finalist/sbg500F01/spectrum-bigdata-addressing-rayn2/spark2/sdk/lib/spectrum-bigdata-addressing-sdk-spark2_2.12-0-SNAPSHOT.jar!/com/precisely/addressing/v1/Preferences.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="299">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/mapinfo/geocode/api/Key.class">
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        <state relative-caret-position="110">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/internal/support/StandardReverseGeocodeExecutor.class">
+    <entry file="jar://$USER_HOME$/Desktop/Downloads/finalist/spectrum-bigdata-addressing-0-20210810.115648-84/spark2/sdk/lib/spectrum-bigdata-addressing-sdk-spark2_2.12-0-SNAPSHOT.jar!/com/precisely/bigdata/addressing/spark/api/UDFBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <caret line="8" column="88" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="88" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/internal/support/StandardGeocodeByKeyExecutor.class">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-catalyst_2.12/3.0.1/2093c0e0245848b81e455a3b53c266c2d04d4df6/spark-catalyst_2.12-3.0.1-sources.jar!/org/apache/spark/sql/catalyst/CatalystTypeConverters.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="13" column="57" lean-forward="true" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+        <state relative-caret-position="308">
+          <caret line="424" column="6" selection-start-line="424" selection-start-column="6" selection-end-line="424" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/api/GeocodeExecutor.class">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-catalyst_2.12/3.0.1/2093c0e0245848b81e455a3b53c266c2d04d4df6/spark-catalyst_2.12-3.0.1-sources.jar!/org/apache/spark/sql/catalyst/expressions/codegen/UnsafeRowWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-sql_2.12/3.0.1/ca9c81f4402dafdd8d52acdc458cb9bbf31a0964/spark-sql_2.12-3.0.1-sources.jar!/org/apache/spark/sql/execution/BufferedRowIterator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#546#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/geocoding/GeocoderProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/mapinfo/geocode/api/Address.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/spark/internal/udf/SingleCandidateUDF.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/FileInput.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/internal/GeocodingHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/spark/internal/udf/ReverseGeocodeSingleCandidateUDF.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-sql_2.11/2.0.1/12fbebdea857aec92b312dde470cb0edebd3eb46/spark-sql_2.11-2.0.1-sources.jar!/org/apache/spark/sql/UDFRegistration.scala">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-sql_2.12/3.0.1/ca9c81f4402dafdd8d52acdc458cb9bbf31a0964/spark-sql_2.12-3.0.1-sources.jar!/org/apache/spark/sql/execution/WholeStageCodegenExec.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="450" column="39" selection-start-line="450" selection-start-column="39" selection-end-line="450" selection-end-column="39" />
+          <caret line="728" column="16" selection-start-line="728" selection-start-column="16" selection-end-line="728" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/internal/ReverseGeocodingHelper.class">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-core_2.12/3.0.1/cf3327bf32e7e65d708d3216d42fc838337e97c2/spark-core_2.12-3.0.1-sources.jar!/org/apache/spark/memory/UnifiedMemoryManager.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="176">
+          <caret line="154" column="4" selection-start-line="154" selection-start-column="4" selection-end-line="154" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassReverseGeocodeExecutor.scala">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-core_2.12/3.0.1/cf3327bf32e7e65d708d3216d42fc838337e97c2/spark-core_2.12-3.0.1-sources.jar!/org/apache/spark/storage/StorageLevel.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="19" column="74" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+        <state relative-caret-position="176">
+          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-core_2.12/3.0.1/cf3327bf32e7e65d708d3216d42fc838337e97c2/spark-core_2.12-3.0.1-sources.jar!/org/apache/spark/util/Utils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="1068" column="4" selection-start-line="1068" selection-start-column="4" selection-end-line="1068" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-core_2.12/3.0.1/cf3327bf32e7e65d708d3216d42fc838337e97c2/spark-core_2.12-3.0.1-sources.jar!/org/apache/spark/storage/BlockInfoManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="271" column="4" selection-start-line="271" selection-start-column="4" selection-end-line="271" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-core_2.12/3.0.1/cf3327bf32e7e65d708d3216d42fc838337e97c2/spark-core_2.12-3.0.1-sources.jar!/org/apache/spark/storage/BlockManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="1370" column="10" selection-start-line="1370" selection-start-column="10" selection-end-line="1370" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-core_2.12/3.0.1/cf3327bf32e7e65d708d3216d42fc838337e97c2/spark-core_2.12-3.0.1-sources.jar!/org/apache/spark/storage/memory/MemoryStore.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="299" column="11" selection-start-line="299" selection-start-column="11" selection-end-line="299" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-sql_2.12/3.0.1/ca9c81f4402dafdd8d52acdc458cb9bbf31a0964/spark-sql_2.12-3.0.1-sources.jar!/org/apache/spark/sql/execution/columnar/InMemoryRelation.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="131" column="31" selection-start-line="131" selection-start-column="31" selection-end-line="131" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/Downloads/finalist/spectrum-bigdata-addressing-0-20210810.115648-84/spark2/sdk/lib/spectrum-bigdata-addressing-sdk-spark2_2.12-0-SNAPSHOT.jar!/com/precisely/bigdata/addressing/spark/internal/SingleCandidateOutputBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="e#81#127#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/spark/api/GeocodeUDFBuilder.class">
+    <entry file="jar://$USER_HOME$/Desktop/Downloads/finalist/spectrum-bigdata-addressing-0-20210810.115648-84/spark2/sdk/lib/spectrum-bigdata-addressing-sdk-spark2_2.12-0-SNAPSHOT.jar!/com/pb/bigdata/common/internal/CloseableCleaner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="e#1563#1564#0" expanded="true" />
-            <element signature="e#1613#1614#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/spark/api/ReverseGeocodeUDFBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="122" column="50" selection-start-line="122" selection-start-column="50" selection-end-line="122" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/mapinfo/geocode/api/Preferences.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/api/GeocodeByKeyExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/api/ReverseGeocodeExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/MultipassReverseGeocoding.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="47" column="15" lean-forward="true" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
-          <folding>
-            <element signature="e#53#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar!/com/pb/bigdata/geocoding/spark/api/GeocodeByKeyUDFBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="122" column="47" lean-forward="true" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/LocationType.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="61" selection-start-column="61" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/MatchType.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="61" selection-start-column="61" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/GeocodingAccumulator.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/geocodingUserDefineFunction/MultipassGeocodeExecutor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="79" selection-start-column="52" selection-end-column="79" />
-          <folding>
-            <element signature="e#81#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/MultipassGeocodeDriver.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/DriverUtils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-321">
-          <caret column="56" selection-start-column="56" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/mapMarker/MultipassGeocodeExecutor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="55" column="86" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/file/CommandLine.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.scala">
+    <entry file="jar://$USER_HOME$/Desktop/Downloads/finalist/spectrum-bigdata-addressing-0-20210810.115648-84/spark2/sdk/lib/spectrum-bigdata-addressing-sdk-spark2_2.12-0-SNAPSHOT.jar!/com/precisely/bigdata/addressing/spark/internal/AddressingFunction.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/KeyLookup.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/CustomExecutor.scala" />
+    <entry file="jar://$USER_HOME$/Desktop/Downloads/finalist/spectrum-bigdata-addressing-0-20210810.115648-84/spark2/sdk/lib/spectrum-bigdata-addressing-sdk-spark2_2.12-0-SNAPSHOT.jar!/com/precisely/addressing/v1/model/LocationTypes.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding>
-            <element signature="e#53#138#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="132">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/addressing/CommandLine.scala" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+        <state relative-caret-position="506">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/bigdata/spectrum/global/spark/MultipassGeocoding.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/precisely/udfObj.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+        <state relative-caret-position="1438">
+          <caret line="75" column="38" lean-forward="true" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
           <folding>
-            <element signature="e#53#112#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#829#866#0" expanded="true" />
           </folding>
         </state>
       </provider>

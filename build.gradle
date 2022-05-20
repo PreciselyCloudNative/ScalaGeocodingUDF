@@ -1,10 +1,10 @@
 apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: 'scala'
 
-group 'com.precisely.bigdata.spectrum.global.spark'
-version '4.0.0.7'
-def spark_version = '2.0.1'
-def scala_version = '2.11'
+group 'com.precisely'
+version 'scala_geocode_udf_1.0'
+def spark_version = '3.0.1'
+def scala_version = '2.12'
 
 buildscript {
     repositories {
@@ -29,16 +29,17 @@ wrapper {
 dependencies {
     compileOnly "org.apache.spark:spark-core_$scala_version:$spark_version"
     compileOnly "org.apache.spark:spark-sql_$scala_version:$spark_version"
-    compile ('javax.media:jai_core:1.1.3')
 
-
-    implementation fileTree(dir: "lib", include: "*.jar")
-    compile 'org.rogach:scallop_2.11:3.1.3'
+    implementation group: 'org.rogach', name: 'scallop_2.12', version: '3.1.3'
+    implementation fileTree(dir: "C:/Users/Mayank.Kasturia/OneDrive - Precisely Inc/com.precisely.locate/sdk" +
+            "/5.1.0.8/spectrum-bigdata-addressing-5.1.0.8/spark2/sdk/lib",
+            include: "spectrum-bigdata-addressing-sdk-spark2_2.12-5.1.0.8.jar")
 
 }
 shadowJar {
     zip64 true
-    exclude '*spectrum-bigdata-geocoding-sdk-spark2-4.0.0.7.jar'
+    exclude '*spectrum-bigdata-addressing-sdk-spark2_2.12-5.1.0.8.jar'
+//    exclude '*spectrum-bigdata-addressing-sdk-spark2_2.12-5.0.0.4.jar'
 }
 
 build.dependsOn(shadowJar)

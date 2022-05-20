@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="Gradle 1" modules="com.precisely.bigdata.spectrum.global.spark.geocoding">
+    <profile name="Gradle 1" modules="ScalaGeocodingUDF.main,ScalaGeocodingUDF.test,com.precisely.bigdata.spectrum.global.spark.geocoding,com.precisely.bigdata.spectrum.global.spark.sparkUDF,com.precisely.sparkUDF,scalaGeocodingUDF.main,scalaGeocodingUDF.test,sparkUDF.main,sparkUDF.test,sparkUDF_main,sparkUDF_test">
       <option name="deprecationWarnings" value="true" />
       <option name="uncheckedWarnings" value="true" />
       <parameters>
