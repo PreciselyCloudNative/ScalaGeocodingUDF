@@ -11,15 +11,15 @@ Precisely Spectrum Geocoding for Big Data is a toolkit for processing enterprise
 | resourcesLocationLocal  | Location of the geocoding resources directory which contains the configurations and libraries needed for geocoding. <br><br> <b>Note:</b> If using a remote path, e.g. HDFS or S3, then set pb.download.location. Local paths must be present on all nodes that tasks will run on. | ```hdfs:///precisely/geocoding/software/resources/``` |
 | dataLocationLocal | File path(s) to one or more geocoding datasets. A path may be a single dataset (extracted or an unextracted SPD), or a directory of datasets. Multiple paths must be separated with a comma. <br><br> <b>Note:</b> If using a remote path, e.g. HDFS or S3, then set pb.download.location. Local paths must be present on all nodes that tasks will run on. | ```hdfs:///precisely/geo_addr/data/``` |
 | extractLocationLocal | File path to where the geocoding datasets will be extracted.  | ```/precisely/geo_addr/data/extractionDirectory``` |
-| [outputFields](#output-fields) | Comma-separated list of fields requested from the geocoder. You must either set this variable. <br><br><b>Refer [outputFields](#output-fields) for more information</b>  | ```X,Y,formattedStreetAddress,formattedLocationAddress``` |
+| [outputFields](#commonly-used-output-fields) | Comma-separated list of fields requested from the geocoder. You must either set this variable. <br><br><b>Refer [outputFields](#commonly-used-output-fields) for more information</b>  | ```X,Y,formattedStreetAddress,formattedLocationAddress``` |
 | [operation](#operation) | Name of addressing operation you want to perform. You must either set this variable. <br><br><b>Refer [operation](#operation) for more information</b>  | ```X,Y,formattedStreetAddress,formattedLocationAddress``` |
 
 ## Operation
 
 | Name | Description  | Example |
 |---|---|---|
-| Geocode  |  Accepts an address as input and returns the standardized US or international address and additional attribution, including the location coordinates, for the address. | ```operation = "geocode"```|
-| Reverse Geocode | Accepts a location (coordinates and coordinate system) as input and returns the standardized address and additional attribution for that location.| ```operation = "reverseGeocode"```|
+| Geocode  |  Accepts an address as input and returns the standardized US or international address and additional attribution, including the location coordinates, for the address. <br> <b> More information [here](https://docs.precisely.com/docs/sftw/hadoop/landingpage/docs/geocoding/webhelp/Geocoding/source/geocoding/geocodefunc_spark_geocode.html)| ```operation = "geocode"```|
+| Reverse Geocode | Accepts a location (coordinates and coordinate system) as input and returns the standardized address and additional attribution for that location. <br> <b> More information [here](https://docs.precisely.com/docs/sftw/hadoop/landingpage/docs/geocoding/webhelp/Geocoding/source/geocoding/geocodefunc_spark_revgeocode.html)| ```operation = "reverseGeocode"```|
 | Verify  | Accepts an address as input and returns the standardized US or international address and additional attribution for the address.  | ```operation = "verify"```|
 | Lookup | Accepts unique key for an address and returns a geocoded matched candidate. Supported keys come from USA or AUS GNAF data (for example, P0000GL638OL for USA data and GAACT715000223 for AUS) and are of types PB_KEY or GNAF_PID.  |```operation = "lookup"```|
 | Multipass:  |   | ```operation = "multipass"```|
