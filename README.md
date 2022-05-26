@@ -12,7 +12,7 @@ Precisely Spectrum Geocoding for Big Data is a toolkit for processing enterprise
 | dataLocationLocal | File path(s) to one or more geocoding datasets. A path may be a single dataset (extracted or an unextracted SPD), or a directory of datasets. Multiple paths must be separated with a comma. <br><br> <b>Note:</b> If using a remote path, e.g. HDFS or S3, then set pb.download.location. Local paths must be present on all nodes that tasks will run on. | ```hdfs:///precisely/geo_addr/data/``` |
 | extractLocationLocal | File path to where the geocoding datasets will be extracted.  | ```/precisely/geo_addr/data/extractionDirectory``` |
 | [outputFields](#commonly-used-output-fields) | Comma-separated list of fields requested from the geocoder. You must either set this variable. <br><br><b>Refer [outputFields](#commonly-used-output-fields) for more information</b>  | ```X,Y,formattedStreetAddress,formattedLocationAddress``` |
-| [operation](#operation) | Name of addressing operation you want to perform. You must either set this variable. <br><br><b>Refer [operation](#operation) for more information</b>  | ```X,Y,formattedStreetAddress,formattedLocationAddress``` |
+| [operation](#operation) | Name of addressing operation you want to perform. You must either set this variable. <br><br><b>Refer [operation](#operation) for more information</b>  | ```Geocode```,```multipass```,```verify```,```lookup```,```reverseGeocode``` |
 
 ## Operation
 
@@ -22,7 +22,7 @@ Precisely Spectrum Geocoding for Big Data is a toolkit for processing enterprise
 | Reverse Geocode | Accepts a location (coordinates and coordinate system) as input and returns the standardized address and additional attribution for that location. <br> <b> More information [here](https://docs.precisely.com/docs/sftw/hadoop/landingpage/docs/geocoding/webhelp/Geocoding/source/geocoding/geocodefunc_spark_revgeocode.html)| ```operation = "reverseGeocode"```|
 | Verify  | Accepts an address as input and returns the standardized US or international address and additional attribution for the address.  | ```operation = "verify"```|
 | Lookup | Accepts unique key for an address and returns a geocoded matched candidate. Supported keys come from USA or AUS GNAF data (for example, P0000GL638OL for USA data and GAACT715000223 for AUS) and are of types PB_KEY or GNAF_PID.  |```operation = "lookup"```|
-| Multipass:  |   | ```operation = "multipass"```|
+| Multipass:  | Improves geocoding results by performing verify first and then geocoding. With this multipass addressing example, for all results without address level precision, a second geocoding pass is run using single line input address, which may increase match rate.  | ```operation = "multipass"```|
 
 ## Input Fields
 
@@ -80,10 +80,10 @@ Comma-separated list of fields requested from the geocoder. You must either set 
 |customFields['PB_KEY']|The PreciselyID unique identifier that is returned when an address match is made using the Master Location Dataset (MLD). |
 |customFields['PRECISION_CODE']|A code describing the precision of the geocode.|
 |customFields['MATCH_TYPE']||
-|customFields['LOC_CODE']||
-|customFields['MATCH_CODE']||
-|customFields['DPV_CONFIRM']||
-|customFields['Geocode_Pass']||
+|customFields['LOC_CODE']|Location codes indicate the accuracy of the assigned geocode.|
+|customFields['MATCH_CODE']|	Match codes indicate the portions of the address that matched or did not match to the reference file.|
+|customFields['DPV_CONFIRM']|	Indicates if a match occurred for DPV data.|
+|customFields['Geocode_Pass']|Indicate type of geocoding pass|
 
 #### <b>For more output fields [here](https://docs.precisely.com/docs/sftw/hadoop/landingpage/docs/geocoding/webhelp/Geocoding/source/geocoding/addressing/addressing_output_fields.html)</b>
 
