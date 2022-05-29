@@ -14,7 +14,7 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types.DataTypes.DoubleType
 
 import scala.annotation.switch
-import scala.collection.JavaConverters.{collectionAsScalaIterableConverter, mapAsScalaMapConverter}
+import scala.collection.JavaConverters._
 import scala.collection.convert.ImplicitConversions.`map AsScala`
 
 
@@ -37,6 +37,8 @@ object Addressing {
       //initialize underline JVM more than once
       case "multipass" =>
         udfBuilder.forCustomExecutor(new CustomExecutor())
+      case "multipassUnit" =>
+        udfBuilder.forCustomExecutor(new CustomUnitExecutor())
       case "geocode" =>
         udfBuilder.withPreferences(new PreferencesBuilder()
           .withReturnAllInfo(true)
@@ -93,7 +95,7 @@ object Addressing {
 
     val datasetName = "addressing_result"
     val outputDF: DataFrame = (operation: @switch) match {
-      case "geocode" | "verify" | "parse" | "multipass" =>
+      case "geocode" | "verify" | "parse" | "multipass" | "multipassUnit" =>
         inputDF
           // Adds a new column, represented as a collection comprised of the outputFields and the error field
           .withColumn(datasetName, operationUdf(
@@ -109,7 +111,7 @@ object Addressing {
           .select("*", datasetName + ".*").drop(datasetName)
 
       case "reverseGeocode" =>
-        if(inputFields.contains("country"))
+        if (inputFields.contains("country"))
           inputDF.withColumn(datasetName, operationUdf(col(inputDF.columns(Integer.valueOf(inputFields.get("x")))).cast(DoubleType), col(inputDF.columns(Integer.valueOf(inputFields.get("y")))).cast(DoubleType), col(inputDF.columns(Integer.valueOf(inputFields.get("country"))))))
             .persist
             .select("*", datasetName + ".*").drop(datasetName)
