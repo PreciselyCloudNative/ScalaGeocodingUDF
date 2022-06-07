@@ -9,10 +9,11 @@ Precisely Spectrum Geocoding for Big Data is a toolkit for processing enterprise
 | Name | Description  | Example |
 |---|---| ---- |
 | resourcesLocationLocal  | Location of the geocoding resources directory which contains the configurations and libraries needed for geocoding. <br><br> <b>Note:</b> If using a remote path, e.g. HDFS or S3, then set pb.download.location. Local paths must be present on all nodes that tasks will run on. | ```hdfs:///precisely/geocoding/software/resources/``` |
-| dataLocationLocal | File path(s) to one or more geocoding datasets. A path may be a single dataset (extracted or an unextracted SPD), or a directory of datasets. Multiple paths must be separated with a comma. <br><br> <b>Note:</b> If using a remote path, e.g. HDFS or S3, then set pb.download.location. Local paths must be present on all nodes that tasks will run on. | ```hdfs:///precisely/geo_addr/data/``` |
-| extractLocationLocal | File path to where the geocoding datasets will be extracted.  | ```/precisely/geo_addr/data/extractionDirectory``` |
+| dataLocation | File path(s) to one or more geocoding datasets. A path may be a single dataset (extracted or an unextracted SPD), or a directory of datasets. Multiple paths must be separated with a comma. <br><br> <b>Note:</b> If using a remote path, e.g. HDFS or S3, then set pb.download.location. Local paths must be present on all nodes that tasks will run on. | ```hdfs:///precisely/geo_addr/data/``` |
+| downloadLocation | File path to where the geocoding datasets will be downloaded.  | ```/precisely/geo_addr/data/extractionDirectory``` |
 | [outputFields](#commonly-used-output-fields) | Comma-separated list of fields requested from the geocoder. You must either set this variable. <br><br><b>Refer [outputFields](#commonly-used-output-fields) for more information</b>  | ```X,Y,formattedStreetAddress,formattedLocationAddress``` |
 | [operation](#operation) | Name of addressing operation you want to perform. You must either set this variable. <br><br><b>Refer [operation](#operation) for more information</b>  | ```Geocode```,```multipass```,```verify```,```lookup```,```reverseGeocode``` |
+| sparkContext | Main entry point for Spark functionality. A SparkContext represents the connection to a Spark cluster, and can be used to create RDDs, accumulators and broadcast variables on that cluster.  | ```spark.sparkContext._jsc``` |
 
 ## Operation
 
@@ -126,7 +127,7 @@ outputFields = ["score",
 ``` 
 operation = "geocode"
 resourcesLocationLocal = "/precisely/sdk/resources"
-dataLocationLocal = "/precisely/data"
+dataLocation = "/precisely/data"
 sqlContext = SQLContext(spark.sparkContext)
 outputFields = ["score",
            "explanation.source['label'] as label",
@@ -134,5 +135,5 @@ outputFields = ["score",
            "location.feature.geometry.coordinates.y as LAT",
            "address.formattedAddress as FullAddress"]
 
-DF = DataFrame(sqlContext._jvm.com.precisely.Addressing.addressingDF(inputDF._jdf, spark.sparkContext._jsc,  operation, resourcesLocationLocal, downloadLocationLocal, dataLocationLocal, outputFields, inputFields), sqlContext)
+DF = DataFrame(sqlContext._jvm.com.precisely.Addressing.addressingDF(inputDF._jdf, spark.sparkContext._jsc,  operation, resourcesLocationLocal, downloadLocationLocal, dataLocation, outputFields, inputFields), sqlContext)
 ```
