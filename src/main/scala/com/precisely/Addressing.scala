@@ -6,8 +6,12 @@
 
 package com.precisely
 
+import com.pb.downloadmanager.api.DownloadManagerBuilder
+import com.pb.downloadmanager.api.downloaders.LocalFilePassthroughDownloader
+import com.pb.downloadmanager.api.downloaders.hadoop.{HDFSDownloader, S3Downloader}
 import com.precisely.addressing.v1.model.{FactoryDescriptionBuilder, PreferencesBuilder}
 import com.precisely.bigdata.addressing.spark.api.{AddressingBuilder, UDFBuilder}
+import org.apache.spark
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.expressions.UserDefinedFunction
 import org.apache.spark.sql.functions._
@@ -22,13 +26,20 @@ object Addressing {
   private val COUNTRY_KEY = "country"
   val country = "USA"
 
-  def addressingDF(inputDF: DataFrame, operation: String, ResourcesLocationLocal: String, ExtractLocationLocal: String, DataLocationLocal: java.util.List[String],
+  def addressingDF(inputDF: DataFrame, sparkContext: spark.api.java.JavaSparkContext, operation: String, resourcesLocation: String, downloadLocation: String, dataLocation: java.util.List[String],
                    outputFields: java.util.List[String], inputFields: java.util.Map[String, String]): DataFrame = {
 
+    val downloadManager = new DownloadManagerBuilder(downloadLocation)
+      .addDownloader(new HDFSDownloader(sparkContext.hadoopConfiguration))
+      .addDownloader(new S3Downloader(sparkContext.hadoopConfiguration))
+      .addDownloader(new LocalFilePassthroughDownloader())
+      .build()
+
     val udfBuilder: UDFBuilder = new AddressingBuilder()
-      .withResourcesLocation(ResourcesLocationLocal)
-      .withDataLocations(DataLocationLocal.asScala.toList: _*)
-      .withExtractionLocation(ExtractLocationLocal)
+      .withResourcesLocation(resourcesLocation)
+      .withDataLocations(dataLocation.asScala.toList: _*)
+      .withExtractionLocation(downloadLocation)
+      .withDownloadManager(downloadManager)
       .udfBuilder()
       .withErrorField("error")
       .withOutputFields(outputFields.asScala.toList: _*)
