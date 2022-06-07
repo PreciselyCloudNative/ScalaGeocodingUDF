@@ -8,7 +8,7 @@ Precisely Spectrum Geocoding for Big Data is a toolkit for processing enterprise
 
 | Name | Description  | Example |
 |---|---| ---- |
-| resourcesLocationLocal  | Location of the geocoding resources directory which contains the configurations and libraries needed for geocoding. <br><br> <b>Note:</b> If using a remote path, e.g. HDFS or S3, then set pb.download.location. Local paths must be present on all nodes that tasks will run on. | ```hdfs:///precisely/geocoding/software/resources/``` |
+| resourcesLocation  | Location of the geocoding resources directory which contains the configurations and libraries needed for geocoding. <br><br> <b>Note:</b> If using a remote path, e.g. HDFS or S3, then set pb.download.location. Local paths must be present on all nodes that tasks will run on. | ```hdfs:///precisely/geocoding/software/resources/``` |
 | dataLocation | File path(s) to one or more geocoding datasets. A path may be a single dataset (extracted or an unextracted SPD), or a directory of datasets. Multiple paths must be separated with a comma. <br><br> <b>Note:</b> If using a remote path, e.g. HDFS or S3, then set pb.download.location. Local paths must be present on all nodes that tasks will run on. | Local: ```/mnt/precisely/geo_addr/data/``` <br> S3: ```s3://dir/ref-data``` |
 | downloadLocation | File path to where the geocoding datasets will be downloaded.  | ```/mnt/precisely/geo_addr/data/``` |
 | [outputFields](#commonly-used-output-fields) | Comma-separated list of fields requested from the geocoder. You must either set this variable. <br><br><b>Refer [outputFields](#commonly-used-output-fields) for more information</b>  | ```X,Y,formattedStreetAddress,formattedLocationAddress``` |
