@@ -126,8 +126,9 @@ outputFields = ["score",
 
 ``` 
 operation = "geocode"
-resourcesLocationLocal = "/precisely/sdk/resources"
-dataLocation = "/precisely/data"
+resourcesLocation = "/precisely/sdk/resources"
+downloadLocation = "/mnt/precisely/data"
+dataLocation = "s3://dir/ref-data"
 sqlContext = SQLContext(spark.sparkContext)
 outputFields = ["score",
            "explanation.source['label'] as label",
