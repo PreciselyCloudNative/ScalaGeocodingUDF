@@ -1,5 +1,22 @@
+# Setup
+## Prerequisite
+<h3> 1. Create Route table:</h3>
+        1a. Name: 'private-route-table'<br>
+        1b. VPC: Default <br>
+    
+   ![image](https://user-images.githubusercontent.com/30530766/172730975-fd3c8bf0-4436-4ab1-a4cc-c0ad323873f9.png)
+    
+    
+<h3> 2. Create Private Subnet</h3>
+
+    ![image](https://user-images.githubusercontent.com/30530766/172730674-5f374257-4be4-4456-abc1-b7e1fcb63221.png) 
+    
+    ![image](https://user-images.githubusercontent.com/30530766/172730779-0d8675de-ff6c-447c-9cee-4bab18b09a0c.png)
+
+
 # Connecting Sagemaker to EMR Cluster
 (Refer: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-emr-cluster-connect.html)
+
 ## To connect Amazon EMR cluster with PySpark kernel selected
 
 1. After you connect to Studio, if you have an existing Studio notebook instance, open that. Otherwise, to create a new notebook instance, select File, and then select New.
