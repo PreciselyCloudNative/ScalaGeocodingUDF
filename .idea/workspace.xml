@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e618cf5-5935-4f15-8058-3edd41876ca5" name="Default Changelist" comment="Add MultipassUnit Executor">
+    <list default="true" id="6e618cf5-5935-4f15-8058-3edd41876ca5" name="Default Changelist" comment="Added Sagemaker notebook">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +206,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1639702147639" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sagemaker" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.33372092" />
@@ -214,6 +215,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nikhil.parekh\OneDrive - Precisely Inc\Code\ScalaGeocodingUDF\Sagemaker" />
       <recent name="C:\Users\Administrator\OneDrive - Precisely Inc\2021\verizon\geocoding\src\main\scala\com\precisely\bigdata\spectrum\global\spark\addressing" />
       <recent name="C:\Users\Administrator\OneDrive - Precisely Inc\2021\verizon\geocoding\src\main\scala\com\precisely\bigdata\spectrum\global\spark\file" />
       <recent name="C:\Users\Administrator\OneDrive - Precisely Inc\2021\verizon\geocoding\src\main\scala\com\precisely\bigdata\spectrum\global\spark" />
@@ -276,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653799298081</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Sagemaker notebook">
+      <created>1654647382381</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654647382381</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -358,7 +367,8 @@
     <MESSAGE value="Initial commit with Addressing UDFs" />
     <MESSAGE value="add multipassUnit" />
     <MESSAGE value="Add MultipassUnit Executor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add MultipassUnit Executor" />
+    <MESSAGE value="Added Sagemaker notebook" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Sagemaker notebook" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
