@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e618cf5-5935-4f15-8058-3edd41876ca5" name="Default Changelist" comment="Added Sagemaker notebook">
+    <list default="true" id="6e618cf5-5935-4f15-8058-3edd41876ca5" name="Default Changelist" comment="ignore idea folder">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654647382381</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ignore idea folder">
+      <created>1654718069411</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654718069411</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -368,7 +374,8 @@
     <MESSAGE value="add multipassUnit" />
     <MESSAGE value="Add MultipassUnit Executor" />
     <MESSAGE value="Added Sagemaker notebook" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Sagemaker notebook" />
+    <MESSAGE value="ignore idea folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore idea folder" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
