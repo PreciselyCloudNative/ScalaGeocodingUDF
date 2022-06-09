@@ -11,6 +11,7 @@
     
    ![image](https://user-images.githubusercontent.com/30530766/172730779-0d8675de-ff6c-447c-9cee-4bab18b09a0c.png)
 
+(<b>Note:</b> For  
 <h3> 3.Create S3 Endpoint </h3> <br>
 
 ![image](https://user-images.githubusercontent.com/30530766/172734298-87314acd-5f36-4336-9a3a-ee9128d51eee.png)
@@ -38,8 +39,9 @@
 ![image](https://user-images.githubusercontent.com/30530766/172921345-b30510cd-5dc1-492a-b66f-88874e86ce8a.png)
 
 <h4> 6c. Select/Create Security Groups: </h4>
-i. ElasticMapReduce-Master-Private
-ii. ElasticMapReduce-Slave-Private
+i. ElasticMapReduce-Master-Private  <br>
+ii. ElasticMapReduce-Slave-Private  <br>
+
 ![image](https://user-images.githubusercontent.com/30530766/172921584-9fd199ef-53cf-4470-8991-3f9fa68991e8.png)
 
 
