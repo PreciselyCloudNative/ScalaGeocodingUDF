@@ -16,13 +16,13 @@
 
 ![image](https://user-images.githubusercontent.com/30530766/172734298-87314acd-5f36-4336-9a3a-ee9128d51eee.png)
 ![image](https://user-images.githubusercontent.com/30530766/172734349-dcfdb8c1-3497-4740-a569-e5e7698596d7.png)
-<!-- ![image](https://user-images.githubusercontent.com/30530766/172734369-0257ca44-1521-4a5b-ad86-7c3f75f2b875.png) -->
+![image](https://user-images.githubusercontent.com/30530766/172734369-0257ca44-1521-4a5b-ad86-7c3f75f2b875.png)
 
 <h3> 4. Create NAT Gateway </h3> <br>
 	
 ![image](https://user-images.githubusercontent.com/30530766/172885800-806e580b-baf1-4ae4-9495-db10eabcb1b6.png)
 
-![image](https://user-images.githubusercontent.com/30530766/172885857-b0ce3d9c-6410-4a72-8720-0dfd2236faf4.png)
+<!-- ![image](https://user-images.githubusercontent.com/30530766/172885857-b0ce3d9c-6410-4a72-8720-0dfd2236faf4.png) -->
 
 <h3> 5. Edit Route Table that we created in step 1 and add route to nat gateway that we created in previous step (emr-nat-gateway) </h3> <br>
 
@@ -46,10 +46,15 @@ ii. ElasticMapReduce-Slave-Private  <br>
 ![image](https://user-images.githubusercontent.com/30530766/172921584-9fd199ef-53cf-4470-8991-3f9fa68991e8.png)
 
 <h3> 7. Create another endpoint named 'sagemaker-studio-endpoint': </h3>
+
 ![image](https://user-images.githubusercontent.com/30530766/172933446-bd9534b7-3c40-4b04-841a-2f5f2e25609f.png)
+
 ![image](https://user-images.githubusercontent.com/30530766/172933471-8767328b-bd03-4b80-87bd-c544f34dfc20.png)
+
 ![image](https://user-images.githubusercontent.com/30530766/172933502-1ad08e18-b572-4c15-b54b-6c89c4c2faab.png)
+
 ![image](https://user-images.githubusercontent.com/30530766/172933551-57c8ea70-12fa-46e2-a17b-16850c29d5bf.png)
+
 ![image](https://user-images.githubusercontent.com/30530766/172933574-0505fa72-fd97-4909-917b-c893db499e14.png)
 
 
