@@ -136,5 +136,5 @@ outputFields = ["score",
            "location.feature.geometry.coordinates.y as LAT",
            "address.formattedAddress as FullAddress"]
 
-DF = DataFrame(sqlContext._jvm.com.precisely.Addressing.addressingDF(inputDF._jdf, spark.sparkContext._jsc,  operation, resourcesLocationLocal, downloadLocationLocal, dataLocation, outputFields, inputFields), sqlContext)
+DF = DataFrame(sqlContext._jvm.com.precisely.Addressing.addressingDF(inputDF._jdf, spark.sparkContext._jsc,  operation, resourcesLocation, downloadLocation, dataLocation, outputFields, inputFields), sqlContext)
 ```
