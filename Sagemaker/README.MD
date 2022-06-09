@@ -1,17 +1,27 @@
 # Setup
 ## Prerequisite
 <h3> 1. Create Route table:</h3>
-        1a. Name: 'private-route-table'<br>
-        1b. VPC: Default <br>
     
    ![image](https://user-images.githubusercontent.com/30530766/172730975-fd3c8bf0-4436-4ab1-a4cc-c0ad323873f9.png)
     
     
-<h3> 2. Create Private Subnet</h3>
+<h3> 2. Create Private Subnet</h3> <br>
 
-    ![image](https://user-images.githubusercontent.com/30530766/172730674-5f374257-4be4-4456-abc1-b7e1fcb63221.png) 
+   ![image](https://user-images.githubusercontent.com/30530766/172730674-5f374257-4be4-4456-abc1-b7e1fcb63221.png) 
     
-    ![image](https://user-images.githubusercontent.com/30530766/172730779-0d8675de-ff6c-447c-9cee-4bab18b09a0c.png)
+   ![image](https://user-images.githubusercontent.com/30530766/172730779-0d8675de-ff6c-447c-9cee-4bab18b09a0c.png)
+
+<h3> 3. Endpoints </h3> <br>
+
+![image](https://user-images.githubusercontent.com/30530766/172734298-87314acd-5f36-4336-9a3a-ee9128d51eee.png)
+![image](https://user-images.githubusercontent.com/30530766/172734349-dcfdb8c1-3497-4740-a569-e5e7698596d7.png)
+![image](https://user-images.githubusercontent.com/30530766/172734369-0257ca44-1521-4a5b-ad86-7c3f75f2b875.png)
+
+<h3> 3. Endpoints </h3> <br>
+	
+![image](https://user-images.githubusercontent.com/30530766/172885800-806e580b-baf1-4ae4-9495-db10eabcb1b6.png)
+
+![image](https://user-images.githubusercontent.com/30530766/172885857-b0ce3d9c-6410-4a72-8720-0dfd2236faf4.png)
 
 
 # Connecting Sagemaker to EMR Cluster
@@ -26,7 +36,6 @@
 To switch your kernel, select in the top right of the UI the currently selected kernel where a pop-up window appears. Then select a kernel of your choice from the kernel drop-down menu. Lastly, select the Select button to make your changes.
 
 ![image](https://user-images.githubusercontent.com/30530766/172654002-fcfc5f89-e2ef-4319-9728-e317f7d8723f.png)
-
 
 3. After you have selected your kernel of choice, select Cluster.
 
