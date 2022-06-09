@@ -61,11 +61,31 @@ ii. ElasticMapReduce-Slave-Private  <br>
 ## Sagemaker Studio
 
 1. Open AWS Sagemaker from AWS Console.
-2. Open Sagemaker studio from the left pane. <br>
+2. Launch Sagemaker studio from the left pane. <br>
 ![MicrosoftTeams-image (1)](https://user-images.githubusercontent.com/30530766/172948525-21d0e8f2-bca4-4d46-a47b-0e835e78c009.png)
 
-3. 
+3. Select Standard setup and click on configure
 
+![MicrosoftTeams-image (3)](https://user-images.githubusercontent.com/30530766/172949190-82efa207-db72-4dda-a66f-cbfb86b61688.png)
+
+4. Create IAM role and give full access to S3
+
+![MicrosoftTeams-image (4)](https://user-images.githubusercontent.com/30530766/172953554-32eb3262-d67a-427d-a48b-f0b334b441d2.png)
+
+5. Network and security:<br>
+5a. Select default VPC<br>
+5b. Security group: ElasticMapReduce-Master-Private & ElasticMapReduce-Slave-Private<br>
+5c. Choose VPC only <br>
+![MicrosoftTeams-image (6)](https://user-images.githubusercontent.com/30530766/172953769-327fe80b-57a1-4f53-a862-39ce32c1866d.png)
+
+<br>
+<b>Keep rest of the setting deafult</b>
+
+![MicrosoftTeams-image (7)](https://user-images.githubusercontent.com/30530766/172954010-1bd8f611-d1d9-432e-af65-9b6b1d299721.png)
+
+![MicrosoftTeams-image (8)](https://user-images.githubusercontent.com/30530766/172954015-a4e3087a-1c2d-495b-b482-ed2cfd2fe37b.png)
+
+![MicrosoftTeams-image (9)](https://user-images.githubusercontent.com/30530766/172954022-11d839ab-16b3-42f8-a376-bccb61474295.png)
 
 # Connecting Sagemaker to EMR Cluster
 (Refer: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-emr-cluster-connect.html)
