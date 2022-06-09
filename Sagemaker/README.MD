@@ -11,7 +11,7 @@
     
    ![image](https://user-images.githubusercontent.com/30530766/172730779-0d8675de-ff6c-447c-9cee-4bab18b09a0c.png)
 
-(<b>Note:</b> For  IPV4 CIDR BLOCK we use incremental IP, for example, 172.31.0.0/20, 172.31.16.0/20, 172.31.32.0/20, 172.31.48.0/20, 172.31.64.0/20, 172.31.80.0/20....<br> And we can create a subnet with the next incremental IP that is available, in our case. 172.31.92.0/20)
+(<b>Note:</b> For  IPV4 CIDR BLOCK we use incremental IP, for example, 172.31.0.0/20, 172.31.16.0/20, 172.31.32.0/20, 172.31.48.0/20, 172.31.64.0/20, 172.31.80.0/20....<br> And we can create a subnet with the next incremental IP that is available, in our case, 172.31.92.0/20)
 <h3> 3.Create S3 Endpoint </h3> <br>
 
 ![image](https://user-images.githubusercontent.com/30530766/172734298-87314acd-5f36-4336-9a3a-ee9128d51eee.png)
@@ -45,7 +45,15 @@ ii. ElasticMapReduce-Slave-Private  <br>
 
 ![image](https://user-images.githubusercontent.com/30530766/172921584-9fd199ef-53cf-4470-8991-3f9fa68991e8.png)
 
-<h4> 6c. Select/Create Security Groups: </h4>
+<h3> 7. Create another endpoint named 'sagemaker-studio-endpoint': </h3>
+![image](https://user-images.githubusercontent.com/30530766/172933446-bd9534b7-3c40-4b04-841a-2f5f2e25609f.png)
+![image](https://user-images.githubusercontent.com/30530766/172933471-8767328b-bd03-4b80-87bd-c544f34dfc20.png)
+![image](https://user-images.githubusercontent.com/30530766/172933502-1ad08e18-b572-4c15-b54b-6c89c4c2faab.png)
+![image](https://user-images.githubusercontent.com/30530766/172933551-57c8ea70-12fa-46e2-a17b-16850c29d5bf.png)
+![image](https://user-images.githubusercontent.com/30530766/172933574-0505fa72-fd97-4909-917b-c893db499e14.png)
+
+
+
 
 # Connecting Sagemaker to EMR Cluster
 (Refer: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-emr-cluster-connect.html)
