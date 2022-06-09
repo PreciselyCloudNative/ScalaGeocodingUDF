@@ -11,7 +11,7 @@
     
    ![image](https://user-images.githubusercontent.com/30530766/172730779-0d8675de-ff6c-447c-9cee-4bab18b09a0c.png)
 
-(<b>Note:</b> For  
+(<b>Note:</b> For  IPV4 CIDR BLOCK we use incremental IP, for example, 172.31.0.0/20, 172.31.16.0/20, 172.31.32.0/20, 172.31.48.0/20, 172.31.64.0/20, 172.31.80.0/20....<br> And we can create a subnet with the next incremental IP that is available, in our case. 172.31.92.0/20)
 <h3> 3.Create S3 Endpoint </h3> <br>
 
 ![image](https://user-images.githubusercontent.com/30530766/172734298-87314acd-5f36-4336-9a3a-ee9128d51eee.png)
@@ -42,9 +42,10 @@
 i. ElasticMapReduce-Master-Private  <br>
 ii. ElasticMapReduce-Slave-Private  <br>
 
+
 ![image](https://user-images.githubusercontent.com/30530766/172921584-9fd199ef-53cf-4470-8991-3f9fa68991e8.png)
 
-
+<h4> 6c. Select/Create Security Groups: </h4>
 
 # Connecting Sagemaker to EMR Cluster
 (Refer: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-emr-cluster-connect.html)
