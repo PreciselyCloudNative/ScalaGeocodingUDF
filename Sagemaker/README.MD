@@ -24,7 +24,7 @@
 
 ![image](https://user-images.githubusercontent.com/30530766/172885857-b0ce3d9c-6410-4a72-8720-0dfd2236faf4.png)
 
-<h3> 5. Edit Route Table that we created in step 1 and add route to nat gateway (emr-nat-gateway) </h3> <br>
+<h3> 5. Edit Route Table that we created in step 1 and add route to nat gateway that we created in previous step (emr-nat-gateway) </h3> <br>
 
 ![image](https://user-images.githubusercontent.com/30530766/172920663-4e9beebf-b107-465e-87fb-8df7ab06e8a1.png)
 
