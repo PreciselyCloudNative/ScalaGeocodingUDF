@@ -29,7 +29,18 @@
 
 <h3> 6. Create EMR Cluster </h3>
 	<h4> 6a. Configuration: </h4>
-	![image](https://user-images.githubusercontent.com/30530766/172920907-17bdc7b7-1952-47ec-9a86-bcdbaebd9ae6.png)
+	
+![image](https://user-images.githubusercontent.com/30530766/172920907-17bdc7b7-1952-47ec-9a86-bcdbaebd9ae6.png)
+
+<h4> 6b. Networking: </h4>
+- Select Private EC2 subnet (sagemaker-private)
+	
+![image](https://user-images.githubusercontent.com/30530766/172921345-b30510cd-5dc1-492a-b66f-88874e86ce8a.png)
+
+<h4> 6c. Select/Create Security Groups: </h4>
+i. ElasticMapReduce-Master-Private
+ii. ElasticMapReduce-Slave-Private
+![image](https://user-images.githubusercontent.com/30530766/172921584-9fd199ef-53cf-4470-8991-3f9fa68991e8.png)
 
 
 
