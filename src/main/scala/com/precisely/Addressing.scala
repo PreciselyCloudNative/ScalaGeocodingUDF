@@ -77,6 +77,12 @@ object Addressing {
           .withCustomPreference("FINALIST_LOG_LEVEL", "2")
           .build)
           .forVerify()
+      case "verifyGlobal" =>
+        udfBuilder.withPreferences(new PreferencesBuilder()
+          .withReturnAllInfo(true)
+          .withFactoryDescription(new FactoryDescriptionBuilder().withLabel("global_locator").build)
+          .build)
+          .forVerify()
       //   parse is removed untill it is re-introduced.
       //			case "parse" =>
       //				udfBuilder.forParse()
@@ -106,7 +112,7 @@ object Addressing {
 
     val datasetName = "addressing_result"
     val outputDF: DataFrame = (operation: @switch) match {
-      case "geocode" | "verify" | "parse" | "multipass" | "multipassUnit" =>
+      case "geocode" | "verify" | "parse" | "multipass" | "multipassUnit" | "verifyGlobal" =>
         inputDF
           // Adds a new column, represented as a collection comprised of the outputFields and the error field
           .withColumn(datasetName, operationUdf(
