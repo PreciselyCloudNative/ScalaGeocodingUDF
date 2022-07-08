@@ -79,10 +79,9 @@ Comma-separated list of fields requested from the geocoder. You must either set 
 |location.feature.geometry.x|The X coordinate (longitude) of the address.|
 |location.feature.geometry.y|The Y coordinate (latitude) of the address.|
 |customFields['PB_KEY']|The PreciselyID unique identifier that is returned when an address match is made using the Master Location Dataset (MLD). |
-|customFields['PRECISION_CODE']|A code describing the precision of the geocode.|
-|customFields['MATCH_TYPE']||
-|customFields['LOC_CODE']|Location codes indicate the accuracy of the assigned geocode.|
-|customFields['MATCH_CODE']|	Match codes indicate the portions of the address that matched or did not match to the reference file.|
+|customFields['PRECISION_CODE']|A code describing the precision of the geocode. <br>Description of each precision code here: [Precision Code](https://docs.precisely.com/docs/sftw/ggs/4.0/en/webhelp/index.html#GlobalGeocodingGuide/source/ResultCodes/Intl_Geocoding/forward_geocoding_codes.html)|
+|customFields['LOC_CODE']|Location codes indicate the accuracy of the assigned geocode. <br>Description of location code here: [Location Code](https://docs.precisely.com/docs/sftw/ggs/4.0/en/webhelp/index.html#GlobalGeocodingGuide/source/ResultCodes/US_Geocoding/GeocodingLocationCodes.html%23reftxt_geocodinglocationcodes)|
+|customFields['MATCH_CODE']|	Match codes indicate the portions of the address that matched or did not match to the reference file. <br>Description of Match code here: [Match Code](https://docs.precisely.com/docs/sftw/ggs/4.0/en/webhelp/index.html#GlobalGeocodingGuide/source/ResultCodes/US_Geocoding/GeocodingMatchCodes_intro.html)|
 |customFields['DPV_CONFIRM']|	Indicates if a match occurred for DPV data.|
 |customFields['Geocode_Pass']|Indicate type of geocoding pass|
 
